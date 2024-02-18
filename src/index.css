@@ -11,3 +11,108 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.filters{
+  background-color: white;
+  box-shadow: 0px 8px 10px 1px #dddcdc;
+ 
+
+}
+.filters .column{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.filters label{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.filters input{
+  width: 400px;
+}
+
+.filters select, .filters input::placeholder{
+  color: rgb(153, 152, 152);
+  font-size: 12px;
+}
+.table thead th, .table tbody tr td{
+  color: gray;
+  font-size: 14px;
+}
+.categoryFilter, .statusFilter{
+  width: 200px;
+}
+.product select{
+  width: 250px;
+  font-size: 12px;
+}
+.row button, .row a{
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.product label{
+  font-size: 12px;
+}
+form {
+  background-color: antiquewhite;
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 0px 0px 5px;
+  border-radius: 10px;
+  text-shadow: 0px 0px 5px white;
+
+}
+form h2{
+margin: 20px;
+text-align: center;
+}
+form label{
+  padding:10px;
+  position: relative;
+  font-weight: 600;
+ 
+}
+form label::after {
+  content: "";
+  width:0;
+  left:10px;
+  background-color: rgb(133, 169, 133);
+  position: absolute;
+  height:2px;
+  bottom: 5px;
+}
+form input{
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid;
+  margin: 0px 20px;
+}
+form input:focus{
+  outline: none;
+}
+.productSum .product .showBtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+@media screen and (max-width:999px) {
+  .filters input{
+    width: 200px;
+    
+  }
+  .filters .column{
+    display: flex;
+    flex-direction: column;
+  }
+  form{
+    width: 80%;
+  }
+  .productSum .product .showBtn{
+    flex-direction: column;
+  }
+}
